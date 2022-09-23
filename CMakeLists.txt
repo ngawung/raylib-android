@@ -37,7 +37,6 @@ message(STATUS "Downloading raylib library")
 include(FetchContent)
 set(BUILD_EXAMPLES OFF CACHE BOOL "" FORCE)
 set(BUILD_GAMES    OFF CACHE BOOL "" FORCE)
-set(PLATFORM Android CACHE BOOL "")
 FetchContent_Declare(raylib URL https://github.com/raysan5/raylib/archive/refs/tags/4.2.0.zip)
 FetchContent_MakeAvailable(raylib)
 
